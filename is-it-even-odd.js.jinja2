@@ -13,7 +13,6 @@ var even = {{ even }};
 var odd = {{ odd }};
 
 function isEven(n) {
-    var normalized = Math.abs(n);
     if (!isNumber(n)) {
         throw new TypeError('expected a number');
     }
@@ -32,7 +31,6 @@ function isEven(n) {
 }
 
 function isOdd(n) {
-    var normalized = Math.abs(n);
     if (!isNumber(n)) {
         throw new TypeError('expected a number');
     }

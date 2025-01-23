@@ -1,7 +1,7 @@
 {
   "name": "is-it-even-odd",
   "description": "Makes two functions avaiable to check if a number is even or odd. Support numbers up to 2770947.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "index.js",
   "engines": {
     "node": ">=4"
