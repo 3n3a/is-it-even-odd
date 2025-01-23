@@ -1,0 +1,56 @@
+/*!
+ * is-it-even-odd <https://github.com/3n3a/is-it-even-odd>
+ *
+ * Copyright (c) 2025, 3n3a.
+ * Released under the MIT License.
+ */
+
+'use strict';
+
+const isNumber = require('is-number');
+
+var even = {{ even }};
+var odd = {{ odd }};
+
+function isEven(n) {
+    var normalized = Math.abs(n);
+    if (!isNumber(n)) {
+        throw new TypeError('expected a number');
+    }
+    if (!Number.isInteger(n)) {
+        throw new Error('expected an integer');
+    }
+    if (!Number.isSafeInteger(n)) {
+        throw new Error('value exceeds maximum safe integer');
+    }
+    if (n > {{ limit }}) {
+        var temp_arr = n.toString().split("");
+        n = parseInt(temp_arr[temp_arr.length - 1]);
+    }
+    var normalized = Math.abs(n);
+    return even.indexOf(normalized) != -1;
+}
+
+function isOdd(n) {
+    var normalized = Math.abs(n);
+    if (!isNumber(n)) {
+        throw new TypeError('expected a number');
+    }
+    if (!Number.isInteger(n)) {
+        throw new Error('expected an integer');
+    }
+    if (!Number.isSafeInteger(n)) {
+        throw new Error('value exceeds maximum safe integer');
+    }
+    if (n > {{ limit }}) {
+        var temp_arr = n.toString().split("");
+        n = parseInt(temp_arr[temp_arr.length - 1]);
+    }
+    var normalized = Math.abs(n);
+    return odd.indexOf(normalized) != -1;
+}
+
+module.exports = {
+    isEven,
+    isOdd,
+}

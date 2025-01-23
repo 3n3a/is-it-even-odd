@@ -1,0 +1,40 @@
+{
+  "name": "is-it-even-odd",
+  "description": "Makes two functions avaiable to check if a number is even or odd. Support numbers up to 2770947.",
+  "version": "1.0.0",
+  "main": "index.js",
+  "engines": {
+    "node": ">=4"
+  },
+  "repository": {
+    "url": "git+https://github.com/3n3a/is-it-even-odd"
+  },
+  "homepage": "https://github.com/3n3a/is-it-even-odd",
+  "author": "3n3a (https://github.com/3n3a)",
+  "bugs": {
+    "url": "https://github.com/3n3a/is-it-even-odd/issues"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "devDependencies": {
+    "mocha": "^3.5.3"
+  },
+  "keywords": [
+    "array",
+    "count",
+    "even",
+    "filter",
+    "integer",
+    "is",
+    "math",
+    "numeric",
+    "odd",
+    "string",
+    "is-it-even-odd"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "is-number": "^7.0.0"
+  }
+}
